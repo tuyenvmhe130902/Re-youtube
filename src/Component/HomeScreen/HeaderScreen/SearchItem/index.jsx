@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import img1 from "../../../../Assets/search.png";
-import img2 from "../../../../Assets/micro.png";
-
+import { AiOutlineSearch } from "react-icons/ai";
+import { FaMicrophone } from "react-icons/fa";
 import "../../home.scss";
 SearchItem.propTypes = {};
 
 function SearchItem(props) {
   return (
-    <div className ='search-text'>
+    <div className="search-text">
       <div className="search-text-item">
         <div className="input-search">
           <input
@@ -18,11 +17,11 @@ function SearchItem(props) {
           />
         </div>
         <div className="icon-search">
-          <img src={img1} alt="img1" className="img-icon-search" />
+          <AiOutlineSearch  className = 'icon-page search'/>
         </div>
       </div>
       <div className="icon-micro">
-        <img src={img2} alt="img1" className="img-icon" />
+        <FaMicrophone  className = 'icon-page micro'/>
       </div>
     </div>
   );
