@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import img5 from "../../../../Assets/avatar.png";
 import { AiFillHome } from "react-icons/ai";
 import { FaRegCompass } from "react-icons/fa";
 import { MdVideoLibrary,MdOutlineSmartDisplay } from "react-icons/md";
@@ -60,62 +61,69 @@ const Library = [
 
 const Subcriptions = [
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    id:1,
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    id:1,
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    id:1,
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    id:1,
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    id:1,
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    id:1,
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    icon: img5,
     name: "Subcriptions",
   },
 ];
 
 const moreForm = [
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    icon: img5,
     name: "Subcriptions",
   },
   {
-    icon: "url(../../../../Assets/avatar.png)",
+    icon: img5,
     name: "Subcriptions",
   },
 ];
@@ -153,8 +161,7 @@ function BodyLeft(props) {
           <div className = "left-home-text">{home2.name}</div>
         </div>
       ))}
-      <div className = 'border-bottom'>
-        <hr  style={{width:200, opacity:0.5}}></hr>
+      <div className = 'border-bottom' >
       </div>
       {
         Library.map((library) =>(
@@ -167,7 +174,9 @@ function BodyLeft(props) {
       <div className = 'border-bottom'>
         <hr  style={{width:200, opacity:0.5}}></hr>
       </div>
-      
+      <div className ="subcrip">
+      SUBSCRIPTIONS
+      </div>
     </div>
   );
 }

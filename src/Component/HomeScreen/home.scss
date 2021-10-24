@@ -12,10 +12,11 @@ html {
   line-height: 1.6rem;
   font-family: "Roboto", "sans-serif";
   box-sizing: border-box;
+  position: relative;
 }
 
 .grid {
-  width: 1200px;
+  width: 1400px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -32,8 +33,13 @@ html {
 /*----------------Header----------------------*/
 .header {
   display: flex;
-  height: auto;
-  margin: 0.8rem;
+  height: 6rem;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 2rem;
+  left: 2rem;
+  padding-top: 1rem;
 }
 //  navbar header
 .nav-header {
@@ -43,12 +49,16 @@ html {
 .icon-navbar {
   width: var(--size-icon);
   height: var(--size-icon);
-  margin: 0.8rem 1.6rem;
+  margin: 1.6rem 0;
+}
+.icon-navbar_1 {
+  margin: 0 1rem 0 0;
 }
 .icon-logo {
   width: 10rem;
-  height: 8rem;
-  margin: -1.45rem 0.6rem;
+  position: absolute;
+  top: 0.5rem;
+  margin-left: 1rem;
 }
 // ------------search Item
 .search-text {
@@ -100,13 +110,12 @@ html {
 // ----------list notification
 .list-notification {
   display: flex;
-  margin: -0.6rem 1.6rem;
-}
 
+}
 .img-avatar-icon {
   width: 6rem;
   height: 4.5rem;
-  margin: 0.8rem;
+  margin: 0.5rem 0;
 }
 
 // ------------body left
@@ -114,9 +123,15 @@ html {
   height: auto;
   display: flex;
 }
+.border-bottom{
+  border-bottom: 0.1rem solid;
+  opacity: 0.3;
+}
 .body-left{
   width: 24rem;
   height: 57rem;
+  position: fixed;
+  padding-top: 6rem;
 }
 .body-left-home{
   display: flex;
@@ -134,4 +149,11 @@ html {
 }          
 .active-page{
 
+}
+.subcrip{
+  font-size: 1.8rem;
+  margin-left: -6rem;
+  font-weight: bold;
+  // background-color: #909090;
+  color: var(--color-icon);
 }

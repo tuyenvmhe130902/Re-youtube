@@ -9,9 +9,9 @@ HomeScreen.propTypes = {
 
 function HomeScreen(props) {
     return (
-        <div className = "home_screen">
+        <div className = "home_screen grid">
             <Header />
-            <Body />
+            {/* <Body /> */}
         </div>
     );
 }

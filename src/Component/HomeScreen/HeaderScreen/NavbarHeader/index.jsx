@@ -11,10 +11,10 @@ HeaderNavbar.propTypes = {
 function HeaderNavbar(props) {
     return (
     <div className = "nav-header">
-        <div>
+        <div className = 'icon-navbar_1'>
             <img className="icon-navbar" src = {navbar1} />
         </div>
-        <div>
+        <div className = 'icon-navbar_2'>
             <img className="icon-logo" src = {logo}/>
         </div>
     </div>
